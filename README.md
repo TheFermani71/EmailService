@@ -40,7 +40,7 @@ EXE:
 
 GET CALL:
 
-http://127.0.0.1:5000/subscribers:
+http://127.0.0.1:5000/subscribers/list:
 
 DELETE /delete_subscriber:
 
