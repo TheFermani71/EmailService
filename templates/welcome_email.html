@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Blog!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #1578b1;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 8px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h2 {
+            color: #333;
+        }
+        .content p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .btn {
+            background-color: #1578b1;
+            color: white;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Benvenuto!</h1>
+        </div>
+        <div class="content">
+            <h2>Ciao {{ name }}!</h2>
+            <p>Ti dò il benvenuto nel sito di Emanuel comunicandondoti che la tua richiesta e stata inoltrata e ricevuta.
+                Emanuel ti contatterà al più presto per toglierti ogni dubbio ed esaudire i tuoi dseideri.
+                Riceverai i post e gli aggiornamenti più recenti direttamente nella tua casella di posta</p>
+            <p>Dai un'occhiata alle ultime novità!</p>
+            <a href="" class="btn">Visita il sito</a>
+        </div>
+        <div class="footer">
+            <p>© {{ current_year }} ServiceDelux. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

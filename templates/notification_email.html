@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Subscription Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #1578b1;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 8px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h2 {
+            color: #333;
+        }
+        .content p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Richiesta da parte di un utente!</h1>
+        </div>
+        <div class="content">
+            <h2>New Subscriber Details</h2>
+            <p><strong>Name:</strong> {{ name }}</p>
+            <p><strong>Email:</strong> {{ email }}</p>
+            <p><strong>Phone Number:</strong> {{ phone }}</p>
+            <p>Salve BOSS, ecco a lei i dettagli dell'utente che ha effettuato la richiesta.</p>
+        </div>
+        <div class="footer">
+            <p>© {{ current_year }} Il tuo ServiceDelux. Sempre pornto a serviti BOSS</p>
+        </div>
+    </div>
+</body>
+</html>
