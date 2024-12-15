@@ -38,7 +38,9 @@ EXE:
   "phone": "123-456-7890"
 }
 
-GET http://127.0.0.1:5000/subscribers:
+GET CALL:
+
+http://127.0.0.1:5000/subscribers:
 
 DELETE /delete_subscriber:
 
