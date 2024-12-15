@@ -73,7 +73,7 @@ def send_notification_email(name, email, phone):
     html_content = render_template('notification_email.html', name=name, email=email, phone=phone, current_year=2024)
 
     # Send notification email to the admin (or email service)
-    msg = Message(subject=subject, recipients=['emailservices1997@gmail.com'], html=html_content)
+    msg = Message(subject=subject, recipients=['your-email@gmail.com'], html=html_content)
     mail.send(msg)
 
 
